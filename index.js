@@ -32,3 +32,55 @@ form.addEventListener("submit", (e) => {
     dataToConvert = newData
     convertMoney()
 })
+
+
+// DARK MODE
+
+const switchBtn = document.getElementById("switch")
+const amount = document.getElementById("amount")
+const from = document.querySelector(".from")
+const to = document.querySelector(".to")
+const submit = document.getElementById("submit")
+const btnDark = document.querySelector(".btn-dark")
+const btnLight = document.querySelector(".btn-light")
+
+switchBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark")
+    result.classList.toggle("dark")
+    amount.classList.toggle("dark")
+    from.classList.toggle("dark")
+    to.classList.toggle("dark")
+    submit.classList.toggle("dark")
+    btnDark.classList.toggle("dark")
+    btnLight.classList.toggle("dark")
+
+    //LOCAL STORAGE
+    if(document.body.classList.contains("dark")){
+        localStorage.setItem("dark-mode", "true")
+    }
+    else{
+        localStorage.setItem("dark-mode", "false")
+    }
+})
+
+//LOCAL STORAGE
+if(localStorage.getItem("dark-mode") === "true"){
+    document.body.classList.add("dark")
+    result.classList.add("dark")
+    amount.classList.add("dark")
+    from.classList.add("dark")
+    to.classList.add("dark")
+    submit.classList.add("dark")
+    btnDark.classList.add("dark")
+    btnLight.classList.add("dark")
+}
+else{
+    document.body.classList.remove("dark")
+    result.classList.remove("dark")
+    amount.classList.remove("dark")
+    from.classList.remove("dark")
+    to.classList.remove("dark")
+    submit.classList.remove("dark")
+    btnDark.classList.remove("dark")
+    btnLight.classList.remove("dark")
+}

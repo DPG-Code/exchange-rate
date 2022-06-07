@@ -5,7 +5,38 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    transition: all ease 0.2s;
+    }
+    body.dark{
+        background-color: #000000;
+    }
+
+.switch{
+    display: flex;
+    position: absolute;
+    top: 2.5%;
+    right: 5%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
+    .btn-light{
+        display: none;
+        color: #ffffff;
+        font-size: 25px;
+        }
+        .btn-light.dark{
+            display: block;
+        }
+    .btn-dark{
+        color: #000000;
+        font-size: 25px;
+        }
+        .btn-dark.dark{
+            display: none;
+        }
+
 
 h1{
     background: #ff00cc;
@@ -22,14 +53,19 @@ h1{
     margin: 25px auto 0 auto;
     font-size: 20px;
     font-weight: 600;
+    text-align: center;
     color: #afafaf;
 }
 #result{
     margin-bottom: 25px;
     font-size: 50px;
     font-weight: 700;
+    text-align: center;
     color: #000000;
-}
+    }
+    #result.dark{
+        color: #ffffff;
+        }
 
 form{
     width: 100%;
@@ -46,6 +82,7 @@ form{
         width: 250px;
         border: 1px solid rgba(0, 0, 0, 0.200);
         background-color: #ffffff;
+        color: #5a5a5a;
         outline: none;
         border-radius: 10px;
         }
@@ -56,24 +93,29 @@ form{
         width: 250px;
         border: 1px solid rgba(0, 0, 0, 0.200);
         background-color: #ffffff;
+        color: #5a5a5a;
         outline: none;
         border-radius: 10px;
         }
         .from option{
             margin: 10px auto;
         }
-
     .to{
         margin: 10px auto;
         padding: 5px 10px;
         width: 250px;
         border: 1px solid rgba(0, 0, 0, 0.200);
         background-color: #ffffff;
+        color: #5a5a5a;
         outline: none;
         border-radius: 10px;
         }
         .to option{
             margin: 10px auto;
+        }
+    #amount.dark, .from.dark, .to.dark{
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: transparent;
         }
     
     #submit{
@@ -86,6 +128,10 @@ form{
         outline: none;
         cursor: pointer;
         }
+        #submit.dark{
+            color: #000000;
+            background-color: #ffffff;
+            }
         #submit:hover{
             box-shadow: 0 0px 15px 1px #00000086;
             }
@@ -100,10 +146,6 @@ form{
         background: #000000;
         border-radius: 5px;
     }
-
-    #amount:focus, .from:focus, .to:focus{
-        border: 1px solid rgba(0, 0, 0, 0.350);;
-        }
 
 
 
