@@ -39,6 +39,7 @@ body{
 
 
 h1{
+    margin: 75px auto 15px auto;
     background: #ff00cc;
     background: -webkit-linear-gradient(to right, #ff00cc, #333399);
     background: linear-gradient(to right, #ff00cc, #333399);
@@ -83,8 +84,9 @@ form{
         border: 1px solid rgba(0, 0, 0, 0.200);
         background-color: #ffffff;
         color: #5a5a5a;
+        font-weight: 500;
         outline: none;
-        border-radius: 10px;
+        border-radius: 15px;
         }
 
     .from{
@@ -94,8 +96,9 @@ form{
         border: 1px solid rgba(0, 0, 0, 0.200);
         background-color: #ffffff;
         color: #5a5a5a;
+        font-weight: 500;
         outline: none;
-        border-radius: 10px;
+        border-radius: 15px;
         }
         .from option{
             margin: 10px auto;
@@ -107,8 +110,9 @@ form{
         border: 1px solid rgba(0, 0, 0, 0.200);
         background-color: #ffffff;
         color: #5a5a5a;
+        font-weight: 500;
         outline: none;
-        border-radius: 10px;
+        border-radius: 15px;
         }
         .to option{
             margin: 10px auto;
@@ -119,11 +123,12 @@ form{
         }
     
     #submit{
-        margin: 10px auto;
-        padding: 5px 10px;
+        margin-top: 20px;
+        padding: 7.5px 15px;
         color: #ffffff;
+        font-weight: 500;
         background-color: #000000;
-        border-radius: 10px;
+        border-radius: 15px;
         border: none;
         outline: none;
         cursor: pointer;
@@ -149,8 +154,52 @@ form{
 
 
 
- @media only screen and (min-width: 350px) {
+ @media only screen and (min-width: 480px) {
     #amount, .from, .to{
         width: 350px;
         }
+}
+
+@media only screen and (min-width: 1280px) {
+    h1{
+        font-size: 72px;
+    }
+    #amountInitial{
+        font-size: 32px;
+    }
+    #result{
+        font-size: 62px;
+    }
+    #amount, .from, .to, #submit{
+        font-size: 20px;
+        
+    }
+    #amount, .from, .to{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    h1{
+        margin: 140px auto 25px auto;
+        font-size: 82px;
+    }
+    #amountInitial{
+        font-size: 42px;
+    }
+    #result{
+        font-size: 72px;
+    }
+    #amount, .from, .to{
+        margin: 15px auto;
+        padding: 10px 15px;
+        border-radius: 25px;
+        font-size: 30px;
+    }
+    #submit{
+        margin-top: 30px;
+        padding: 12.5px 30px;
+        border-radius: 25px;
+        font-size: 30px;
+    }
 }
