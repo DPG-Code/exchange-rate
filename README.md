@@ -1,7 +1,7 @@
 # Exchange-rate ⚖
 
 ### 💰 About The Project
-Updated currency exchange app, integrated dark mode
+Updated currency exchange app, integrated dark mode.
 
 ### 💰 Built With
 - Html/Css
