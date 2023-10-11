@@ -1,6 +1,6 @@
 # Exchange-rate ⚖
 
-![Project previe image](https://res.cloudinary.com/dhpxqwsym/image/upload/w_1280,h_720,c_fill/v1678870284/documentations/exchangerate_tzyxfw)
+![Project previe image](https://res.cloudinary.com/dhpxqwsym/image/upload/w_1280,h_720,c_fill/v1678870284/documentations/exchangerate_noulle)
 
 ### 💰 About The Project
 
