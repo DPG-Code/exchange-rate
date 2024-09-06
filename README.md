@@ -1,17 +1,19 @@
-# Exchange-rate ⚖
+<div align="center">
+  <a href="https://exchange-rate-dpg.netlify.app">
+    <img
+      src="https://res.cloudinary.com/dhpxqwsym/image/upload/w_1280,h_720,c_fill/v1678870284/documentations/exchangerate_noulle"
+      alt="Exchange Rate principal page"
+    />
+  </a>
+  <p>
+    <b>
+      Updated currency exchange app, integrated dark mode.
+    </b>
+  </p>
+</div>
 
-![Project previe image](https://res.cloudinary.com/dhpxqwsym/image/upload/w_1280,h_720,c_fill/v1678870284/documentations/exchangerate_noulle)
+## 🛠️ Stack
 
-### 💰 About The Project
-
-Updated currency exchange app, integrated dark mode.
-
-### 💰 Built With
-
-- Html/Css
-- JavaScript
-- API (exchangerate)
-
-## Contact 📭
-
-**Daniel Prieto Gaviria @DPG-Code** - prietogaviriadaniel@gmail.com
+- **JavaScript**
+- **Html/Css**
+- **API (exchangerate)**
